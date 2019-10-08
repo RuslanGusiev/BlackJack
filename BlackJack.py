@@ -7,6 +7,10 @@
 
 import random
 
+'''
+L.S. Well done! The game works and the logic and general framework is solid. 
+'''
+
 card_deck = [['2 Hearts', 2], ['3 Hearts', 3], ['4 Hearts', 4], ['5 Hearts', 5], ['6 Hearts', 6], 
              ['7 Hearts', 7], ['8 Hearts', 8], ['9 Hearts', 9], ['10 Hearts', 10],  ['Jack Hearts', 10], ['Queen Hearts', 10], 
              ['King Hearts', 10], ['Ace Hearts', 11], ['2 Clubs', 2], ['3 Clubs', 3], ['4 Clubs', 4], ['5 Clubs', 5], 
@@ -31,6 +35,10 @@ def game(num): # number of cards we need
         card_deck.remove(last_card)
     return player
 
+'''
+L.S. Very nice! Can you also tell me what this function does? (i.e. add comments)
+'''
+
 # The beginning of game
 def begin_game():
     while True:
@@ -53,6 +61,11 @@ def begin_game():
             print("Your first two cards: ", second_player[0][0]+",",second_player[1][0])
             print('Your total: ', total2)
             
+
+            '''
+            L.S. Correct!
+            '''
+
             while True:
                 try:
                     choice1 = input('Do you want more cards? ')
